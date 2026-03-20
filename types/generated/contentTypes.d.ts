@@ -399,6 +399,7 @@ export interface ApiSermonSermon extends Schema.CollectionType {
       'oneToMany',
       'api::watch-history.watch-history'
     >;
+    youtubeUrl: Attribute.String;
   };
 }
 
