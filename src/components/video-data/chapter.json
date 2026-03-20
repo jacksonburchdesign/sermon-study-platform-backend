@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_video_data_chapters",
+  "info": {
+    "displayName": "Chapter",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "StartTime": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Summary": {
+      "type": "blocks"
+    },
+    "Scriptures": {
+      "type": "string"
+    }
+  }
+}

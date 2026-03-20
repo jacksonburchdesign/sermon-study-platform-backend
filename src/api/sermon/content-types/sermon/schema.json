@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sermons",
+  "info": {
+    "singularName": "sermon",
+    "pluralName": "sermons",
+    "displayName": "Sermon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Transcript": {
+      "type": "blocks"
+    },
+    "Chapters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video-data.chapter"
+    },
+    "VideoFile": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "watch_histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::watch-history.watch-history",
+      "mappedBy": "sermon"
+    }
+  }
+}
